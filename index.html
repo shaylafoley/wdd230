@@ -7,10 +7,19 @@
     <meta name = "description" content = "WDD 230 - Frontend Development Course Assignment Portal.">
     <meta name = "author" content = "Shayla Foley">
    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Shayla Foley Profile Image" width="75" height="100"
+       
+        <img id="photo" src="images/profile.jpg" alt="Shayla Foley Profile Image" width="75" height="100">
+       
+            <span><h1>Shayla Foley</h1></span>
+        
     </header>
     <nav>
         <ul>
@@ -21,8 +30,36 @@
         </ul>
     </nav>
     <main>
-
+        <h1 class="text">WDD 230: Web Frontend Development</h1>
+        <div class="parent">
+        <section class="card">
+            <span>
+            <h2>Learning Actvities</h2>
+            </span>
+            <ul class="links">
+                <li><a href="">Week 01</a></li>
+                <li><a href="">Week 02</a></li>
+                <li><a href="">Week 03</a></li>
+                <li><a href="">Week 04</a></li>
+                <li><a href="">Week 05</a></li>
+                <li><a href="">Week 05</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <span>
+            <h2>Information</h2>
+            </span>
+            <p>Weather:  76 Degress</p>
+            <p>Warm and Sunny</p>
+            <p>Number of visits to the page: 10</p>
+        </section>
+        </div>
     </main>
-    <footer></footer>
+
+    <footer class="lastModified">
+        <p id="copyYear"></p>
+        <p id="lastMod"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>

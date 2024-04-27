@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, footer, nav {
+    background-color: #bbb;
+    padding: 30px;
+}
+header{
+    
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.photo {
+    float: left;
+}
+
+.parent {
+    margin: 1rem 2vw;
+}
+
+.parent section {
+    border: 1px solid #415541;
+    background-color: #e9f5e9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+    
+}
+
+.parent span {
+    background-color: #415541;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: .75rem 0;
+    
+}
+
+.parent p {
+    padding: 10px;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+h1 {
+    font-weight: 100;
+}
+nav {
+    background-color: #415541;
+    margin: 0 auto;
+    max-width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    border: 1px solid #fff;
+}
+.active{
+    color:yellow;
+
+}
+.text {
+    font-weight: 500;
+    margin: 2rem;
+    text-decoration-line: underline;
+}
+.links {
+    margin: 1rem;
+    list-style-type: none;
+    
+}
+.links a:hover {
+    color:#415541;
+}
+#photo {
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px black;
+    margin: 1rem;
+}
+.lastModified {
+    font-size: small;
+    text-align: center;
+}
