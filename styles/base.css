@@ -13,6 +13,8 @@ header{
     align-items: center;
     display: flex;
     justify-content: center;
+    font-size: x-large;
+    
 }
 .photo {
     float: left;
@@ -31,7 +33,7 @@ header{
     
 }
 
-.parent span {
+h2, .parent span {
     background-color: #415541;
     color: #fff;
     display: block;
@@ -46,6 +48,7 @@ header{
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    
 }
 h1 {
     font-weight: 100;
@@ -97,4 +100,12 @@ nav a:hover {
 .lastModified {
     font-size: small;
     text-align: center;
+}
+.card {
+    
+    color: #415541;
+    
+    text-align: left;
+    
+
 }
