@@ -1,0 +1,19 @@
+:root {
+    --color-1: #4440b4;
+    --color-2: #b4b4b4;
+    --color-3: #5f99ca;
+    --color-4: #c05a42;
+  }
+.head {
+   
+    background-color: #5f99ca;
+}
+.main {
+    background-color: #b4b4b4;
+}
+.wire {
+    background-color: #c05a42;
+}
+.foot {
+    background-color: #5f99ca;
+}
