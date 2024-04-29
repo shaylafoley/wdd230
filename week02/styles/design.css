@@ -59,3 +59,7 @@ footer {
 h3 {
     margin-bottom: .5rem;
 }
+.side {
+    display: grid;
+    display: -ms-inline-grid;
+}
