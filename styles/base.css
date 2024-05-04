@@ -123,8 +123,8 @@ nav a:hover {
 }
 
 ul.menuLinks li a {
-    border: black 1 px;
-    padding: .75 2vw;
+    border: black 1px;
+    padding: 2px 2vw;
     color: white;
     text-decoration: none;
 
