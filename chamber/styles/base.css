@@ -193,18 +193,7 @@ nav.open {
     margin-bottom: 8px;
     color:#c05a42
 }
-#darkBtn{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    border: none;
-    background-color: lightgray;
-}
-.dark {
-    background-color: black;
-    color: lightgray;
-}
+
 .spot {
     font-size: xx-large;
     text-align: left;

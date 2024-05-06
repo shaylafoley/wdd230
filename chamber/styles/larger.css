@@ -20,19 +20,17 @@
         flex: 1 1 100%;
 
     }
-
-    #myButton {
-        display: none;
-    }
-
-    ul.menuLinks, ul.menuLinks.open {
+    .navigation {
         display: flex;
     }
-
-    ul.menuLinks a:hover {
-        background-color: rgba(255, 255,255, 0.2);
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
     }
-    nav {
-        grid-template-rows: 1fr;
+    .navigation a {
+        text-align: center;
+    }
+    #menu {
+        display: none;
     }
 }
