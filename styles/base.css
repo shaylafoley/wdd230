@@ -170,3 +170,10 @@ nav.open {
     background-color: black;
     color: lightgray;
 }
+.heroLogan picture {
+    width: 100%;
+}
+.heroLogan img {
+    width: 100%;
+    height: auto;
+}
