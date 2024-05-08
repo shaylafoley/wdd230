@@ -190,6 +190,10 @@ nav.open {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
+    background: radial-gradient(#fff, #415541);
+	border: 1px solid rgba(0,0,0,.75);
+    box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
 }
 .map {
     margin: 1rem;
