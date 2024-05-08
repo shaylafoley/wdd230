@@ -164,7 +164,7 @@ nav.open {
     right: 20px;
     cursor: pointer;
     border: none;
-    background-color: ligh;
+    background-color: lightgray;
 }
 .dark {
     background-color: black;
