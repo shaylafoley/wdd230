@@ -183,7 +183,7 @@ nav.open {
 }
 .container img {
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 .hero-text {
     width: 80%
@@ -215,7 +215,8 @@ nav.open {
 }
 .spotlight {
     margin: 3rem;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 1rem;
 }
@@ -319,6 +320,10 @@ body {
 
 #menu.show::before {
 	content: "X";
+}
+.navigation.show {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
