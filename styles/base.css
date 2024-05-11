@@ -197,3 +197,38 @@ nav.open {
 .map {
     margin: 1rem;
 }
+.mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+.sidebar {
+    background-color: #bbb;
+    
+    
+}
+.sidebar section {
+    
+    border: 1px solid #415541;
+    background-color: #e9f5e9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: large;
+    text-align: center;
+    max-width: 450px;
+    
+}
+.right-half {
+    background-color: black;
+    
+}
+aside {
+    max-width: 500px;
+    padding-left: 1rem;
+}
