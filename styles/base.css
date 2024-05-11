@@ -240,5 +240,17 @@ figcaption {
     margin: 1rem;
     font-size: large;
     padding: 1rem;
-    
+
+}
+.gallery img {
+    width: 100%; /* Adjust this as needed */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for transform and filter */
+}
+
+/* Hover effect */
+@media (min-width: 768px) { /* This ensures the effect is not applied on mobile devices */
+    .gallery img:hover {
+        transform: scale(1.1); /* Enlarges the image */
+        filter: brightness(1.2); /* Increases the brightness */
+    }
 }
