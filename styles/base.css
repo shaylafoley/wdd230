@@ -225,10 +225,20 @@ nav.open {
     
 }
 .right-half {
-    background-color: black;
+    background-color: fff;
     
 }
 aside {
     max-width: 500px;
     padding-left: 1rem;
+}
+figcaption {
+    text-align: center;
+    border: 1px solid black;
+    max-width: 550px; 
+    align-items: center;
+    margin: 1rem;
+    font-size: large;
+    padding: 1rem;
+    
 }
