@@ -407,4 +407,10 @@ figcaption {
         transform: scale(1.1); /* Enlarges the image */
         filter: brightness(1.2); /* Increases the brightness */
     }
+    
+}
+@media (max-width: 768px) {
+    .mainContent {
+        display:block;
+    }
 }
