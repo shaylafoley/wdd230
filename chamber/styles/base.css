@@ -356,8 +356,8 @@ body {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    width: 600px;
-    height: auto;  
+    width: 100%;
+    height: auto;
 }
 .sidebar {
     background-color: #bbb;
@@ -396,12 +396,13 @@ figcaption {
 
 }
 .gallery img {
-    width: 100%; /* Adjust this as needed */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for transform and filter */
+    width: 100%; 
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; 
 }
 
 /* Hover effect */
-@media (min-width: 768px) { /* This ensures the effect is not applied on mobile devices */
+@media (min-width: 768px) { 
     .gallery img:hover {
         transform: scale(1.1); /* Enlarges the image */
         filter: brightness(1.2); /* Increases the brightness */
