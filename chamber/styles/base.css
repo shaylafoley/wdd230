@@ -355,8 +355,7 @@ body {
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-bottom: 2rem;
-    
+    margin-bottom: 1rem;  
 }
 .sidebar {
     background-color: #bbb;
@@ -389,7 +388,7 @@ figcaption {
     border: 1px solid black;
     max-width: 550px; 
     align-items: center;
-    margin: 1rem;
+    margin: 3rem;
     font-size: large;
     padding: 1rem;
 
