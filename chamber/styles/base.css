@@ -355,7 +355,9 @@ body {
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-bottom: 1rem;  
+    margin-bottom: 1rem;
+    width: 600px;
+    height: auto;  
 }
 .sidebar {
     background-color: #bbb;
