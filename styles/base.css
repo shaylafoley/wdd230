@@ -110,6 +110,10 @@ nav a:hover {
     
 
 }
+.contact {
+    border: 2px solid black;
+    margin-bottom: 1rem;
+}
 #myButton {
     font-size: 2rem;
     background: none;
