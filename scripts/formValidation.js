@@ -1,13 +1,17 @@
-let password = document.querySelector("#password");
-let confirm = document.querySelector("#confirm");
+const password = document.querySelector("#password");
+const confirm = document.querySelector("#confirm");
 const feedback = document.querySelector("#feedback");
 
-if (password !== confirm) {
-    displaymsg.textcontent = "Password does not match."
-    confirm.value = ""
-    password.value = ""
-    password.focus();
-else {
+confirm.addEventListener('focusout', controlar)
 
+function controlar() {
+    if (password !== confirm) {
+        confirm.value = ""
+        password.value = ""
+        password.focus()
+        feedback.textContent = "Values do not match. Try again."
+
+    } else {
+        feedback.textContent=""
     }
 }

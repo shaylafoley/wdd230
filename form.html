@@ -41,25 +41,45 @@
     </nav>
     <main id ="main">
         <h1>Contact Us</h1>
-        <form method="get">
+        <form method="get" class="wf1">
             <fieldset>
                 <legend>Contact Information</legend>
-                <label>Username* <input type="text" id="username" name="username" required></label>
-                <label>Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label>Password<input type="text" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required></label>
-                <label>Password<input type="text" id="confirm" name="confirm" pattern="[A-Za-z0-9]{8,}" required></label>
-
-           
+                <label>Username*<input type="text" id="username" name="username" required></label>
+                <label>Email*<input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="someone@byi.edu" required></label>
+                <label>Password*<input type="text" id="password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder="8 characters - Letters and Numbers"required></label>
+                <label>Password Confirmation*<input type="text" id="confirm" name="confirm" pattern="[A-Za-z0-9]{8,}" placeholder="8 characters - Letters and Numbers"required></label>
+                <label>Page Rating<input type="range" id="range" name="range" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+	                <option value="1">1</option>
+	                <option value="2">2</option>
+	                <option value="3">3</option>
+	                <option value="4">4</option>
+	                <option value="5">5</option>
+                    <option value="6">6</option>
+	                <option value="7">7</option>
+	                <option value="8">8</option>
+	                <option value="9">9</option>
+	                <option value="10">10</option>
+	            </datalist></label>
+                <input type="submit" value="Sign Up">
             </fieldset>
-             <input type="submit" value="Propose My Course">
+             
         </form>
         
         <div id="feedback"></div>
           
         
     </main>
-    <iframe class= "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.8266920525516!2d-86.16573970321045!3d39.76599939999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50bb892b2fd9%3A0x96c1cdaf07ae93c!2sIndiana%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1715113896807!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
     <footer class="lastModified">
+        <section class="contact">
+            <h3>Contact Informaion</h3>
+            <p>Address: 8257 E CR 851 S, Plainfield, IN 46168</p>
+            <p>Phone: 435-590-1081</p>
+            <p>Email: shaylafoley99@gmail.com</p>
+
+        </section>
         <p id="copyYear"></p>
         <p id="lastMod"></p>
     </footer>
