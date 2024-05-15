@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"> 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
@@ -32,59 +33,30 @@
     <nav class="animateMe">
         <button id="myButton"></button>
         <ul class="menuLinks">
-            <li class="current-menu-item"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="form.html">Form</a></li>
+            <li class="current-menu-item"><a href="form.html">Form</a></li>
         </ul>
     </nav>
     <main id ="main">
-        <div class="heroIndy">
-            <picture>
-                <source srcset="week03/images/hero-small.webp" media="(max-width: 400px)">
-                <source srcset="week03/images/hero-medium.webp" media="(max-width: 960px)">
-                <img src="week03/images/hero-large.webp" alt="Hero image of Indianapolis Temple" width="1500" height="750">
-            </picture>
-            <span>Indianapolis Indiana Temple</span>
-        </div>
-        <h1 class="text">WDD 230: Web Frontend Development</h1>
-        <div class="parent">
-        <section class="card">
-            <h2>Learning Actvities</h2>
-            <ul class="links">
-                <li>Week 1:
-                    <a href="week01/holygrail.html">Holy Grail</a>
-                    <a href="week01/chamber-site-plan.html">Site Plan</a>
-                    <a href="week01/media-query.html">Media-Query</a>
-                </li>
-                    
-                <li>Week 2:
-                    <a href="week02/design.html">Design</a>
-                    <a href="https://codepen.io/shaylafoley/pen/ZEZZwBV">CodePen</a>
-                    <a href="week02/bom.html">BOM</a></li>
-                <li>Week 3:
-                    <a href="week03/images/landscape.jpg">WebP</a>
-                    <a href="week03/lazyload.html">Lazy Loading</a>
-                    <a href="week03/responsive-images.html">Responsive Images</a>
-                    <a href="week03/bomstorage.html">localStorage</a></li>
-                <li>Week 4:
-                    <a href="https://codepen.io/shaylafoley/pen/NWVPQzz">CodePen</a>
-                    <a href="week04/images/combinators.jpg">Combinators</a>
-                    <a href="week04/tablebuild.html">Table Build</a>
-                    <a href="week04/Form-start/index.html">HTML Forms</a>
-                </li>
-                <li>Week 5:<a href=""></a></li>
-                <li>Week 6:<a href=""></a></li>
-            </ul>
-        </section>
-        <section class="card">
-            <h2>Information</h2>
-            <p>Weather:  76 Degress</p>
-            <p>Warm and Sunny</p>
-            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-    
-        </section>
-        </div>
+        <h1>Contact Us</h1>
+        <form method="get">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Username* <input type="text" id="username" name="username" required></label>
+                <label>Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label>Password<input type="text" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required></label>
+                <label>Password<input type="text" id="confirm" name="confirm" pattern="[A-Za-z0-9]{8,}" required></label>
+
+           
+            </fieldset>
+             <input type="submit" value="Propose My Course">
+        </form>
+        
+        <div id="feedback"></div>
+          
+        
     </main>
     <iframe class= "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.8266920525516!2d-86.16573970321045!3d39.76599939999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50bb892b2fd9%3A0x96c1cdaf07ae93c!2sIndiana%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1715113896807!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer class="lastModified">
@@ -95,5 +67,6 @@
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/localStorage.js"></script>
+    <script src="scripts/formvalidation.js"></script>
 </body>
 </html>
