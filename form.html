@@ -45,10 +45,13 @@
             <fieldset>
                 <legend>Contact Information</legend>
                 <label>Username*<input type="text" id="username" name="username" required></label>
-                <label>Email*<input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="someone@byi.edu" required></label>
+                <label>Email*<input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="someone@byui.edu" required></label>
                 <label>Password*<input type="text" id="password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder="8 characters - Letters and Numbers"required></label>
                 <label>Password Confirmation*<input type="text" id="confirm" name="confirm" pattern="[A-Za-z0-9]{8,}" placeholder="8 characters - Letters and Numbers"required></label>
-                <label>Page Rating<input type="range" id="range" name="range" min="0" max="10" value="0" step="1" list="rangevalues">
+                
+                <label for="r">Page Rating</label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
                 <datalist id="rangevalues">
                     <option value="0">0</option>
 	                <option value="1">1</option>
@@ -61,7 +64,7 @@
 	                <option value="8">8</option>
 	                <option value="9">9</option>
 	                <option value="10">10</option>
-	            </datalist></label>
+	            </datalist>
                 <input type="submit" value="Sign Up">
             </fieldset>
              
@@ -88,5 +91,6 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/localStorage.js"></script>
     <script src="scripts/formvalidation.js"></script>
+    <script src="scripts/rangeValue.js"></script>
 </body>
 </html>
