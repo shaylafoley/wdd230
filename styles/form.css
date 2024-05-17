@@ -1,7 +1,7 @@
 .wf1 label {
     display: block;
     padding-top: 1rem;
-    color: dark blue;
+    color: darkblue;
     font-size: large;
     margin: 1rem;
 
@@ -12,7 +12,7 @@
 }
 .wf1 fieldset {
     margin: 2rem;
-    border: 1px sold black;
+    border: 1px solid black;
     border-radius: 6px;
     padding: .5rem; 
     max-width: 600px;  
