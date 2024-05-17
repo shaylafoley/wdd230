@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayla Foley - WDD 230 - Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Indianapolis Chamber of Commerce Page">
+    <meta name="author" content="Shayla Foley">
+    <meta property="og:title" content="Indianapolis Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp0wS19IXLKTpqBjKOhPO9ZfREhae7Dbyw06ZwLtg_jB0X2zNSsBmwhfjyuA&s">
+    <meta property="og:url" content="https://shaylafoley.github.io/wdd230/chamber/index.html">
+   
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<header>
+    <a id="menu" href="#"></a>
+    <nav>
+        
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li class="current-menu-item"><a href="">Join</a></li>
+        </ul>
+        <h3 class="logo">LOGO</h3>
+    </nav>
+</header>
+    <main>
+        <h1>Contact Us</h1>
+        <form method="get" action="thankyou.html" class="wf1">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Username*<input type="text" id="username" name="username" required></label>
+                <label for="email">Email*<input type="email" name="email" id="email"
+                    pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from byui.edu" required></label>
+                <label>Password*<input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder="8 characters - Letters and Numbers" required></label>
+                <label>Password Confirmation*<input type="password" id="confirm" name="confirm" pattern="[A-Za-z0-9]{8,}" placeholder="8 characters - Letters and Numbers" required></label>
+                
+                <label for="r">Page Rating</label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+	                <option value="1">1</option>
+	                <option value="2">2</option>
+	                <option value="3">3</option>
+	                <option value="4">4</option>
+	                <option value="5">5</option>
+                    <option value="6">6</option>
+	                <option value="7">7</option>
+	                <option value="8">8</option>
+	                <option value="9">9</option>
+	                <option value="10">10</option>
+	            </datalist>
+                <input type="submit" value="Contact Us Today!">
+            </fieldset>
+             
+        </form>
+        
+        <div id="feedback"></div>
+           
+ 
+    </main>
+    
+    <footer class="lastModified">
+        <section class="contact">
+            <h3>Contact Informaion</h3>
+            <p>Address: 8257 E CR 851 S, Plainfield, IN 46168</p>
+            <p>Phone: 435-590-1081</p>
+            <p>Email: shaylafoley99@gmail.com</p>
+
+        </section>
+        <p id="copyYear"></p>
+        <p id="lastMod"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>
