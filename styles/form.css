@@ -61,7 +61,7 @@
 }
 .wf1 input[type="text"],
 .wf1 input[type="email"],
-.wf1 input[type="text"]
+.wf1 input[type="password"]
 {
     display: block;
     padding: .75rem;
