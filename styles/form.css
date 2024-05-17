@@ -1,18 +1,27 @@
+:root{
+    --darkblue: darkblue;
+    --black: black;
+    --darkgreen: #415541;
+    --white: white;
+
+}
+
+
 .wf1 label {
     display: block;
     padding-top: 1rem;
-    color: darkblue;
+    color: var(--darkblue);
     font-size: large;
     margin: 1rem;
 
 }
 .contact {
-    border: 2px solid black;
+    border: 2px solid var(--black);
     margin-bottom: 1rem;
 }
 .wf1 fieldset {
     margin: 2rem;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     border-radius: 6px;
     padding: .5rem; 
     max-width: 600px;  
@@ -30,9 +39,9 @@
     
 }
 .wf1 input[type="submit"]{
-    border: 1px solid #415541;
-    background-image: linear-gradient(#415541, white);
-    color: black;
+    border: 1px solid var(--darkgreen);
+    background-image: linear-gradient(var(--darkgreen), var(--white));
+    color: var(--black);
     border-radius: 6px;
     padding: .75rem;
     width: 96%;
@@ -66,7 +75,7 @@
     display: block;
     padding: .75rem;
     margin: 1rem;
-    background-color: #eee;
+    background-color: var(--white);
     color: gray;
     width: 100%;
     max-width: 400px;
