@@ -34,40 +34,52 @@
     </nav>
 </header>
     <main>
-        <h1>Contact Us</h1>
-        <form method="get" action="thankyou.html" class="wf1">
+        <div class="form-container"></div>
+        <h1>Member Information</h1>
+        <form method="get" action="thankyou.html" class="join">
             <fieldset>
-                <legend>Contact Information</legend>
-                <label>Username*<input type="text" id="username" name="username" required></label>
-                <label for="email">Email*<input type="email" name="email" id="email"
-                    pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from byui.edu" required></label>
-                <label>Password*<input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder="8 characters - Letters and Numbers" required></label>
-                <label>Password Confirmation*<input type="password" id="confirm" name="confirm" pattern="[A-Za-z0-9]{8,}" placeholder="8 characters - Letters and Numbers" required></label>
-                
-                <label for="r">Page Rating</label>
-                <div id="rangevalue">0</div>
-                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
-                <datalist id="rangevalues">
-                    <option value="0">0</option>
-	                <option value="1">1</option>
-	                <option value="2">2</option>
-	                <option value="3">3</option>
-	                <option value="4">4</option>
-	                <option value="5">5</option>
-                    <option value="6">6</option>
-	                <option value="7">7</option>
-	                <option value="8">8</option>
-	                <option value="9">9</option>
-	                <option value="10">10</option>
-	            </datalist>
-                <input type="submit" value="Contact Us Today!">
-            </fieldset>
+                <legend>Applicant Information</legend>
+                <fieldset>
+                    
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label>Title or Position<input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}"></label>
+                    <label>Email <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+
+                    <label>Phone <input type="tel" name="phone" id="phone" placeholder="1235551234" required></label>
+                    <label>Business/Organization's Name <input type="text" name="business" id="business" required></label>
+
+                </fieldset>
+                <fieldset>
+                    
+                    <label>
+                        Membership Level:
+                        <select name="membershipLevel" id="membershipLevel">
+                                <option value="">Please Select &#9662;</option>
+                            <option value="np">NP Membership - No Fee</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label>Business Description<textarea name="description" id="description"></textarea></label>
+                    
+                </fieldset>
+                <fieldset>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Sign Me Up">
+                </fieldset>
              
         </form>
         
-        <div id="feedback"></div>
-           
- 
+        </div>
+        <div class="benefits-container">
+            <h2>Membership Benefits</h2>
+            <p><strong>NP Membership:</strong> Access to basic resources and support, no fee required.</p>
+            <p><strong>Bronze Membership:</strong> Includes standard benefits plus access to basic training sessions.</p>
+            <p><strong>Silver Membership:</strong> All bronze benefits plus advertising spots and event discounts.</p>
+            <p><strong>Gold Membership:</strong> All silver benefits plus premium event access and spotlight positions.</p>
+        </div>
     </main>
     
     <footer class="lastModified">

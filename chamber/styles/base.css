@@ -415,3 +415,89 @@ figcaption {
         display:block;
     }
 }
+.join input,
+.join select,
+.join textarea{
+    display: block;
+}
+
+
+
+.join label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--darkblue);
+    font-size: large;
+    margin: 1rem;
+
+}
+
+
+
+.join legend {
+    color:black;
+    padding: 0 .5rem;
+    font-size: xx-large;
+}
+
+.join div{
+    padding-top: 1rem;
+    color: #415541;
+    font-size: .9rem;
+    
+}
+.join input[type="submit"]{
+    border: 1px solid var(--darkgreen);
+    background-image: linear-gradient(var(--color-1), white);
+    color: black;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 2rem;
+    box-shadow: 1px 1px 4px gray;
+    margin-top: 2rem;
+    align-items: center;
+}
+#feedback {
+    color: red;
+}
+#r {
+    width: 410px;
+    margin-bottom: 0;
+    margin: 1rem;
+}
+#rangevalues option {
+	flex: 1 1 auto;
+}
+#rangevalues {
+	display: flex;
+	margin: 1rem;
+	width: 450px;
+    
+}
+.join input[type="text"],
+.join input[type="email"],
+.join input[type="tel"],
+.join textarea,
+.join select
+{
+    display: block;
+    padding: .75rem;
+    margin: 1rem;
+    background-color: var(--white);
+    color: gray;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+
+}
+.join input:required {
+    border-right: solid 8px red;
+}
+.join input:required:valid {
+    border-right: solid 8px green;
+}
+.join fieldset{
+    margin: 2rem;
+}
