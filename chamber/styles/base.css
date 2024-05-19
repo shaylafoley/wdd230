@@ -452,12 +452,12 @@ figcaption {
     color: black;
     border-radius: 6px;
     padding: .75rem;
-    width: 96%;
+    width: 100%;
     max-width: 400px;
-    margin: 2rem;
+    
     box-shadow: 1px 1px 4px gray;
-    margin-top: 2rem;
-    align-items: center;
+    
+   
 }
 #feedback {
     color: red;
@@ -500,4 +500,45 @@ figcaption {
 }
 .join fieldset{
     margin: 2rem;
+}
+.join-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    align-items: start;
+
+}
+.join form-container, 
+.join benefits-container {
+    flex: 1;
+    padding: 20px;
+}
+main h1 {
+    margin-left: 2rem;
+}
+.benefit {
+    border: 1px solid black;
+    background-color: lightgray;
+    border-radius:10px;
+    overflow: hidden;
+    
+    
+    margin: 1rem;
+    padding: 1rem;
+    font-size: xx-large;
+}
+.benefits-container {
+    background-color: var(--color-4);
+    margin: 1rem;
+}
+@media (max-width: 768px) {
+    .join-main {
+        display:block;
+    }
 }

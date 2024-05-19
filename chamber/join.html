@@ -34,8 +34,10 @@
     </nav>
 </header>
     <main>
-        <div class="form-container"></div>
         <h1>Member Information</h1>
+        <div class="join-main">
+        <div class="form-container">
+        
         <form method="get" action="thankyou.html" class="join">
             <fieldset>
                 <legend>Applicant Information</legend>
@@ -75,10 +77,19 @@
         </div>
         <div class="benefits-container">
             <h2>Membership Benefits</h2>
-            <p><strong>NP Membership:</strong> Access to basic resources and support, no fee required.</p>
-            <p><strong>Bronze Membership:</strong> Includes standard benefits plus access to basic training sessions.</p>
-            <p><strong>Silver Membership:</strong> All bronze benefits plus advertising spots and event discounts.</p>
-            <p><strong>Gold Membership:</strong> All silver benefits plus premium event access and spotlight positions.</p>
+                <section class="benefit">            
+                    <p><strong>NP Membership:</strong> Access to basic resources and support, no fee required.</p>
+                </section>
+                <section class="benefit">            
+                    <p><strong>Bronze Membership:</strong> Includes standard benefits plus access to basic training sessions.</p>
+                </section>
+                <section class="benefit"> 
+                    <p><strong>Silver Membership:</strong> All bronze benefits plus advertising spots and event discounts.</p>
+                </section>
+                <section class="benefit"> 
+                    <p><strong>Gold Membership:</strong> All silver benefits plus premium event access and spotlight positions.</p>
+                </section>
+        </div>
         </div>
     </main>
     
@@ -95,5 +106,6 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/timestamp.js"></script>
 </body>
 </html>
