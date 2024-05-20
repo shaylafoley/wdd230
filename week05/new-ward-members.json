@@ -1,0 +1,29 @@
+{
+    "familyName" : "Foley",
+    "dateMovedIn": "May 23, 2015",
+    "numberInFamily": 4,
+    "visitedByBishopric": true,
+    "members" : [
+      {
+        "name" : "David Shawn",
+        "age" : 48,
+        "birthDate" : "Nov. 16, 1975"
+      },
+      {
+        "name" : "Shayla",
+        "age" : 43,
+        "birthDate": "Mar. 12, 1981"
+      },
+      {
+        "name" : "Rachel Melanie",
+        "age" : 21,
+        "birthDate": "Jan. 11, 2003"
+      },
+      {
+        "name" : "Kaitlin Ruth",
+        "age" : 20,
+        "birthDate": "Sept. 20, 2004"
+      }
+      
+    ]
+  }
