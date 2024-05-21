@@ -169,6 +169,7 @@ nav.open {
     cursor: pointer;
     border: none;
     background-color: lightgray;
+    
 }
 .dark {
     background-color: black;

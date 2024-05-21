@@ -1,0 +1,15 @@
+main {
+    background-color: darkolivegreen;
+    margin: 1rem;
+} 
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 1rem;
+    
+    
+}
+
+h1 {
+    align-items: center;
+}
