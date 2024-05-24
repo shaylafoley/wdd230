@@ -534,7 +534,7 @@ main h1 {
     font-size: xx-large;
 }
 .benefits-container {
-    background-color: var(--color-4);
+    background-color: white;
     margin: 1rem;
 }
 @media (max-width: 768px) {
