@@ -34,7 +34,7 @@ const displayLinks = (weeks) => {
             anchorTag.textContent = link.title;
 
             //if (link.url.startsWith("https://")) {
-            //    anchorTag.href = `${link.url}`
+                anchorTag.href = `${link.url}`
             //} else {
             //    anchorTag.href = `${baseURL}/${anchor.url}`;
             //}
