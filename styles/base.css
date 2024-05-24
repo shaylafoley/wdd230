@@ -199,4 +199,15 @@ nav.open {
     box-shadow: 0 0 10rem #fff;
 	opacity: 0.75;
 }
+#weather {
+    font-size: x-large;
+    align-items: center;
+}
 
+figcaption::first-letter {
+    text-transform: uppercase;
+    
+}
+figure{
+    text-align: center;
+}
