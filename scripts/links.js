@@ -1,29 +1,52 @@
 const baseURL = "https://shaylafoley.github.io/wdd230/";
 const linksURL = "https://shaylafoley.github.io/wdd230/data/links.json";
+
 async function getLinks() {
+    try {
     const response = await fetch(linksURL);
-    const data = await response.json();
-    displayLinks(data);
-  }
+    if (response.ok) {
+        const data = await response.json();
+        displayLinks(data.weeks);
+    } else {
+        throw new Error('Network response was not ok.');
+    }
+} catch (error) {
+    console.error('Fetch error:', error);
+}
+}
 
 const displayLinks = (weeks) => {
+    const linksList = document.querySelector('.links');
+    
     weeks.forEach((week) => {
         
-        let weekNumber = document.createElement('ul')
-        let weekTitle = document.createElement('li');
-        let activityLink = document.createElement('a');
+        let weekItem = document.createElement('li');
+        let weekTitle = document.createElement('strong');
+        weekTitle.textContent = week.week;
+        weekItem.appendChild(weekTitle);
 
-        weekTitle.textContent = `${week.week}`;
-        activityLink.setAttribute('href',week.links.url);
-        activityLink.setAttribute("a", week.links.title);
+        let linkList = document.createElement('ul');
 
-        weekNumber.appendChild(weekTitle);
-        weekNumber.appendChild(activityLink);
+        week.links.forEach((link) => {
+            let linkItem = document.createElement('li');
+            let anchorTag = document.createElement('a');
 
-        linksURL.appendChild(weekNumber);
-    }
-    
-    )
+            anchorTag.textContent = link.title;
+
+            //if (link.url.startsWith("https://")) {
+            //    anchorTag.href = `${link.url}`
+            //} else {
+            //    anchorTag.href = `${baseURL}/${anchor.url}`;
+            //}
+            
+            
+
+            linkItem.appendChild(anchorTag);
+            linkList.appendChild(linkItem);
+        });
+        weekItem.appendChild(linkList);
+        linksList.appendChild(weekItem);
+    });
 }
-  
-  getLinks();
+        
+getLinks();
