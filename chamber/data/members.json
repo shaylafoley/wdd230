@@ -3,57 +3,57 @@
       {
         "name": "Regus",
         "address": "42-49 S Meridian St Indianapolis, IN 46204",
-        "phone number": "800-281-3242",
+        "phone": "800-281-3242",
         "image": "https://www.regus.com/icons/media/regus/regusLogo.svg",
-        "membershipLevel": "Bronze",
+        "membership": "Bronze",
         "websiteURL": "https://www.regus.com/en-us/united-states/indiana/indianapolis?&cust_source=google&cust_medium=cpc&cust_source_platform=GOOGLE&cust_campaign=US+%3E+EN+%3E+OF+%3E+SM+%3E+IN+%3E+Indianapolis&cust_adgroup=Business+Center&cust_term=business+center+indianapolis&gad_source=1&gclid=CjwKCAjw9cCyBhBzEiwAJTUWNVdzD2imjoxSWAvzH7Q9Qo-jPO3Uv6bO-NmaBoJhwV64DIgM3qeJkxoCTIQQAvD_BwE&gclsrc=aw.ds"
       },
       {
         "name": "Indy Black",
         "address": "202 E Market St Indianapolis IN 46204",
-        "phone number": "833-439-4222",
+        "phone": "833-439-4222",
         "image": "https://b3069485.smushcdn.com/3069485/wp-content/uploads/2022/10/indybccupdated-copy.png?lossy=1&strip=1&webp=1",
-        "membershipLevel": "Gold",
+        "membership": "Gold",
         "websiteURL": "https://indybcc.org"
       },
       {
         "name": "U.S. Small Business Administration",
         "address": "409 3rd St SW Washington DC 20416",
-        "phone number": "800-862-8088",
+        "phone": "800-862-8088",
         "image": "https://www.sba.gov/themes/custom/sba/dist/img/logo-horizontal.svg",
-        "membershipLevel": "Silver",
+        "membership": "Silver",
         "websiteURL": "https://www.sba.gov/district/indiana?utm_source=google&utm_medium=organic&utm_campaign=gbp-listing&utm_content=indianapolis-in-district"
       },
       {
         "name": "SBC",
         "address": "2201 46tgh St Ste 133 Indianapolis, IN 46205",
-        "phone number": "317-643-4735",
+        "phone": "317-643-4735",
         "image": "https://www.thesmallbusinesscollaborative.com/wp-content/uploads/2022/12/primary-logo-e1671119289559.jpg",
-        "membershipLevel": "Gold",
+        "membership": "Gold",
         "websiteURL": "https://www.thesmallbusinesscollaborative.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb"
       },
       {
         "name": "Murphy Business Sales",
         "address": "8520 Allison Pointe Blvd Suite 220 Indianapolis Indiana 46250",
-        "phone number": "317-682-4070",
+        "phone": "317-682-4070",
         "image": "https://murphybusiness.com/indianapolis/wp-content/themes/murphy-common/images/murphy-micro-logo.png",
-        "membershipLevel": "Bronze",
+        "membership": "Bronze",
         "websiteURL": "https://murphybusiness.com/indianapolis/"
       },
       {
         "name": "Pros Consulting",
         "address": "35 Whittington Drive Suite 300 Brownsburg IN 46112",
-        "phone number": "877-242-7760",
+        "phone": "877-242-7760",
         "image": "https://prosconsulting.com/wp-content/uploads/2022/11/Pros-logo-INC_1-300x167-1.jpg",
-        "membershipLevel": "Gold",
+        "membership": "Gold",
         "websiteURL": "https://prosconsulting.com"
       },
       {
         "name": "Chorus Inc",
         "address": "238 S Meriian St 4th Floor Indianapolis IN 46225",
-        "phone number": "317-687-6055",
+        "phone": "317-687-6055",
         "image": "https://chorusinc.com/wp-content/uploads/2020/12/CHORUS-home-page-2020-top-left-logo-980x188.png",
-        "membershipLevel": "Silver",
+        "membership": "Silver",
         "websiteURL": "https://chorusinc.com"
       }]
 }  
