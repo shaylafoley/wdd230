@@ -8,7 +8,7 @@ async function getDirectory() {
     displayDirectory(data.companies);
 }
 
-getDirectory();
+
 
 const displayDirectory = companies => {
     companies.forEach((company) => {
@@ -45,4 +45,6 @@ const displayDirectory = companies => {
 
     });
 }
+
+getDirectory();
 

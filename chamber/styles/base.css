@@ -542,3 +542,71 @@ main h1 {
         display:block;
     }
 }
+.directory {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 700px;
+    background-color: #4440b4;
+
+}
+.menuDirectory {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #5f99ca;
+    text-align: center;
+    
+}
+.menuDirectory button {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.gridDirectory {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #eee;
+}
+
+.gridArticle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.gridDirectory img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px black;
+    height: 75px;
+    max-width: 100%;
+    margin: 2rem;
+}
+.gridDirectory img, p {
+    text-align: center;
+}
+
+.gridList {
+    display: flex;
+    flex-direction: column;   
+}
+
+.gridList section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+.gridList section img {
+    display: none;
+}
+
+.gridList section h2 {
+    font-size: 1rem;
+}
+
+.gridList section:nth-child(even) {
+    background-color: #415541;
+}
+

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shayla Foley - WDD 230 - Chamber of Commerce</title>
-    <meta name="description" content="WDD 230 - Indianapolis Chamber of Commerce Page">
+    <title>Shayla Foley - WDD 230 - Chamber of Commerce Company Directory</title>
+    <meta name="description" content="WDD 230 - Indianapolis Chamber of Commerce Page Company Directory">
     <meta name="author" content="Shayla Foley">
-    <meta property="og:title" content="Indianapolis Chamber of Commerce">
+    <meta property="og:title" content="Indianapolis Chamber of Commerce Company Directory">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp0wS19IXLKTpqBjKOhPO9ZfREhae7Dbyw06ZwLtg_jB0X2zNSsBmwhfjyuA&s">
     <meta property="og:url" content="https://shaylafoley.github.io/wdd230/chamber/index.html">
@@ -25,22 +25,22 @@
     <nav>
         
         <ul class="navigation">
-            <li class="current-menu-item"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="">Directory</a></li>
+            <li class="current-menu-item"><a href="">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
         <h3 class="logo">LOGO</h3>
     </nav>
 </header>
-    <main>
+    <main class="directory">
         <div class='menuDirectory'>
             <button id="gridButton">Grid</button>
             <button id="listButton">List</button>
         </div>
         <hr>
-        <article>
-            <section  class="gridDirectory">
+        <article class="gridArticle">
+            <section id="gridDirectory" class="gridDirectory">
                
             </section>
         </article>
@@ -61,5 +61,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/directory.js"></script>
+    <script src="scripts/gridAndListToggle.js"></script>
 </body>
 </html>
