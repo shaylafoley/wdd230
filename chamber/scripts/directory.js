@@ -12,7 +12,9 @@ async function getDirectory() {
 
 const displayDirectory = companies => {
     companies.forEach((company) => {
-        let card = document.createElement('section');
+        let cardMem = document.createElement('section');
+            cardMem.classList.add('cardMem');
+
         let name = document.createElement('h2');
         let address = document.createElement('p');
         let phone = document.createElement('p');
@@ -24,10 +26,10 @@ const displayDirectory = companies => {
         name.textContent = `${company.name}`;
         address.textContent = `${company.address}`;
         phone.textContent = `${company.phone}`;
-        membership.textContent = `${company.membership}`;
+        membership.textContent = `Membership: ${company.membership}`;
         
-        website.textContent = `${company.websiteURL}`;
-        website.setAttribute('href', company.websiteURL);
+        website.textContent = company.websiteURL;
+        website.href = company.websiteURL;
         website.setAttribute('target', '_blank');
     
 
@@ -37,14 +39,16 @@ const displayDirectory = companies => {
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');
 
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(membership);
-        card.appendChild(website);
-        card.appendChild(portrait);
+        
+        cardMem.appendChild(name);
+        cardMem.appendChild(address);
+        cardMem.appendChild(phone);
+        cardMem.appendChild(membership);
+        cardMem.appendChild(website);
+        cardMem.appendChild(portrait);
+        
 
-        gridDirectory.appendChild(card);
+        gridDirectory.appendChild(cardMem);
 
     });
 }
