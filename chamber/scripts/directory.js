@@ -16,7 +16,7 @@ const displayDirectory = companies => {
         let name = document.createElement('h2');
         let address = document.createElement('p');
         let phone = document.createElement('p');
-        let website = document.createElement('p');
+        let website = document.createElement('a');
         let membership = document.createElement('p');
     
         let portrait = document.createElement('img');
@@ -25,7 +25,10 @@ const displayDirectory = companies => {
         address.textContent = `${company.address}`;
         phone.textContent = `${company.phone}`;
         membership.textContent = `${company.membership}`;
-        website.textContent = `${company.website}`;
+        
+        website.textContent = `${company.websiteURL}`;
+        website.setAttribute('href', company.websiteURL);
+        website.setAttribute('target', '_blank');
     
 
         portrait.setAttribute('src', company.image);
