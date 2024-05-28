@@ -2,10 +2,16 @@ const url = 'data/members.json';
 
 
 async function getSpotlight() {
-    const response = await fetch(url);
-    const data = await response.json();
-    
-    displaySpotlight(data.companies);
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        displaySpotlight(data.companies);
+    } catch (error) {
+        console.error('Error fetching the spotlight data:', error);
+    }
 }
 
 
@@ -13,6 +19,10 @@ async function getSpotlight() {
 const displaySpotlight = companies => {
     const qualified = companies.filter(company => company.membership === 'Silver' || company.membership === 'Gold');
     
+    if (qualified.length === 0) {
+        console.warn('No qualified companies found.');
+        return;
+    }
 
     const shuffleMembers = qualified.sort(() => 0.5 - Math.random());
     const spotlightMembers = shuffleMembers.slice(0, 3);
@@ -50,11 +60,13 @@ const displaySpotlight = companies => {
         memberAd.appendChild(portrait);
 
         const spotlight = document.getElementById(spotlightIds[index]);
-        
-        spotlight.appendChild(memberAd);
-
-    });
+        if (spotlight) {
+            spotlight.innerHTML = ''; // Clear existing content
+            spotlight.appendChild(memberAd);
+        } else {
+            console.error(`Element with ID ${spotlightIds[index]} not found.`);
+        }
+});
 }
-
 getSpotlight();
 

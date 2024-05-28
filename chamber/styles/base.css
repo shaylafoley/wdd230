@@ -707,3 +707,9 @@ figure{
     margin-top: 0;
 
 }
+.spotWinner {
+    /* Example styles */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
