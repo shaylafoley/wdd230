@@ -1,14 +1,14 @@
-const url = 'data/members.json';
+const spotlightURL = 'data/members.json';
 
 
 async function getSpotlight() {
     try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
+        const spotResponse = await fetch(spotlightURL);
+        if (!spotResponse.ok) {
+            throw new Error(`HTTP error! Status: ${spotResponse.status}`);
         }
-        const data = await response.json();
-        displaySpotlight(data.companies);
+        const spotData = await spotResponse.json();
+        displaySpotlight(spotData.companies);
     } catch (error) {
         console.error('Error fetching the spotlight data:', error);
     }

@@ -711,5 +711,45 @@ figure{
     /* Example styles */
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
+}
+.spotWinner img {
+    width: 150px;
+    height: 100%;
+    margin: 1rem;
+}
+.spotWinner a {
+    color: blue;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    text-align: center;
+    max-width: 100%;
+    display: inline-block;
+}
+.spotWinner p {
+    margin: 1rem;
+}
+.spotlight h3 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#banner {
+    background-color: #f2eec1;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
 }
