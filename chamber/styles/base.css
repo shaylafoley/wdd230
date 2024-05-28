@@ -448,7 +448,7 @@ figcaption {
 }
 .join input[type="submit"]{
     border: 1px solid var(--darkgreen);
-    background-image: linear-gradient(var(--color-1), white);
+    background-image: linear-gradient(var(--color-3), white);
     color: black;
     border-radius: 6px;
     padding: .75rem;
@@ -514,8 +514,8 @@ figcaption {
     align-items: start;
 
 }
-.join form-container, 
-.join benefits-container {
+.form-container, 
+.benefits-container {
     flex: 1;
     padding: 20px;
 }
@@ -527,8 +527,6 @@ main h1 {
     background-color: lightgray;
     border-radius:10px;
     overflow: hidden;
-    
-    
     margin: 1rem;
     padding: 1rem;
     font-size: xx-large;

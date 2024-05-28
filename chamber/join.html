@@ -36,7 +36,7 @@
     <main>
         <h1>Member Information</h1>
         <div class="join-main">
-        <div class="form-container">
+        
         
         <form method="get" action="thankyou.html" class="join">
             
@@ -46,7 +46,7 @@
                     <label>First Name* <input type="text" name="fname" id="fname" required></label>
                     <label>Last Name* <input type="text" name="lname" id="lname" required></label>
                     <label>Title or Position<input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}"></label>
-                    <label>Email <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                    <label>Email <input type="email" name="email" id="email" placeholder="someone@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required></label>
 
                     <label>Phone <input type="tel" name="phone" id="phone" placeholder="1235551234" required></label>
                     <label>Business/Organization's Name <input type="text" name="business" id="business" required></label>
@@ -90,7 +90,6 @@
                     <p><strong>Gold Membership:</strong> All silver benefits plus premium event access and spotlight positions.</p>
                 </div>
         </section>
-        </div>
         </div>
         
     </main>
