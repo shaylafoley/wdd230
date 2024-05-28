@@ -680,3 +680,30 @@ main h1 {
     background-color: transparent;
     color: black;
 }
+#weather {
+    font-size: large;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+#weather, h3 {
+    margin: 1rem;
+    
+}
+#weather, div {
+    margin: 1rem;
+}
+
+figcaption::first-letter {
+    text-transform: uppercase;
+    
+    
+}
+figcaption {
+    margin: 1rem;
+}
+figure{
+    text-align: center;
+    margin-top: 0;
+
+}

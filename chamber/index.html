@@ -49,10 +49,16 @@
             <p>Job Fair this week</p>
             <p>Finance classes available</p>
         </section>
-        <section class="card">
-            <h2>Weather</h2>
-            <p>Weather:  76 Degress</p>
-            <p>Warm and Sunny</p>
+        <section class="weatherCard" id="weather">
+            <h2>Current Weather</h2>
+            <p>The current temperature in Indianapolis, Indiana is: <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="default-icon.png" alt="Weather icon">
+                <figcaption></figcaption>
+            </figure>
+            <hr>
+            <h3>3-Day Forecast</h3>
+            <div id="forecast"></div>
             
         </section>
         </div>
@@ -64,19 +70,16 @@
 
         <div class="spotlight">
             <section>
-                <h3>Thankful Tree</h3>
-                <p>Congrats to Jane!</p>
-                <p>www.beingthankful.com</p>
+                <h3>Spotlight 1</h3>
+                <div id="spotWinner1"></div>
             </section>
             <section>
-                <h3>Thankful Tree</h3>
-                <p>Congrats to Jane!</p>
-                <p>www.beingthankful.com</p>
+                <h3>Spotlight 2</h3>
+                <div id="spotWinner2"></div>
             </section>
             <section>
-                <h3>Thankful Tree</h3>
-                <p>Congrats to Jane!</p>
-                <p>www.beingthankful.com</p>
+                <h3>Spotlight 3</h3>
+                <div id="spotWinner3"></div>
             </section>
         </div>
     </main>
@@ -94,5 +97,7 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>
