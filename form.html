@@ -49,7 +49,8 @@
                     pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from byui.edu" required></label>
                 <label>Password*<input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder="8 characters - Letters and Numbers" required></label>
                 <label>Password Confirmation*<input type="password" id="confirm" name="confirm" pattern="[A-Za-z0-9]{8,}" placeholder="8 characters - Letters and Numbers" required></label>
-                
+                <div id="feedback"></div>
+
                 <label for="r">Page Rating</label>
                 <div id="rangevalue">0</div>
                 <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
@@ -71,7 +72,7 @@
              
         </form>
         
-        <div id="feedback"></div>
+        
           
         
     </main>
