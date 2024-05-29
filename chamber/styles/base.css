@@ -173,24 +173,32 @@ nav.open {
     padding: 0;
     margin: 0 auto;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     max-width: none;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
 
 }
 .container img {
     width: 100%;
     height: auto;
 }
-
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
 .hero-text h1 {
     font-size: 3.3rem;
     margin-top: 8px;
     margin-bottom: 8px;
-    color:#c05a42
+    color:#c05a42;
 }
 
 .spot {
@@ -222,6 +230,7 @@ nav.open {
 .contact {
     border: 2px solid black;
     margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 .hero {
     position: relative;
@@ -242,6 +251,22 @@ nav.open {
 .callAction :hover {
     background-color: transparent;
 }
+
+@media (max-width:884px) {
+    .container {
+        
+        flex-direction: column;  
+        align-items: center;
+        text-align: center;
+    }
+    .hero-text {
+        width: 100%;
+        align-items: center;
+    }
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+}
 @media (max-width:678px){
     .hero-text h1 {
         font-size: 2rem
@@ -250,20 +275,6 @@ nav.open {
 @media (max-width:428px){
     nav ul {
         display: none;
-    }
-}
-
-@media (max-width:884px) {
-    .container {
-        margin-top: 10px;
-        flex-direction: column;  
-    }
-    .hero-text {
-        width: 100%;
-        text-align: center;
-    }
-    .hero-text h1 {
-        font-size: 3rem;
     }
 }
 * {
