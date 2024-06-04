@@ -816,3 +816,9 @@ figure{
         color: inherit; /* Maintain text color */
     }
 }
+#copyYear {
+    display: block;
+}
+#lastMod {
+    display: block;
+}
